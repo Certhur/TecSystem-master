@@ -1,5 +1,8 @@
 <!-- ****************************************Super Admin************************************************************ -->
 <?php 
+$urlAbsoluto = 'http://'.$_SERVER['HTTP_HOST'].'/Tecsystem-Master';
+
+
 if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
 <ul class="sidebar-menu">
     <li class="header"><h3>Menú</h3></li>
@@ -13,6 +16,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
     <li class="<?php echo $active_home; ?>">
         <a href="?module=start"><i class="fa fa-home"></i>Inicio</a>    
     </li>
+
     <?php 
         //if($_GET['module']=="start") {?>
         
@@ -33,7 +37,6 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
                     <li><a href="?module=deposito"><i class="fa fa-circle-o"></i>Depósito</a></li>
                     <li><a href="?module=proveedor"><i class="fa fa-circle-o"></i>Proveedor</a></li>
                     <li><a href="?module=producto"><i class="fa fa-circle-o"></i>Producto</a></li>
-                    <li><a href="?module=unidad_medida"><i class="fa fa-circle-o"></i>Unidad de medida</a></li>
     </ul>
             </li>
             <li class="treeview">
@@ -105,6 +108,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
                 <ul class="treeview-menu">
                     <li><a href="?module=departamento"><i class="fa fa-circle-o"></i>Departamento</a></li>
                     <li><a href="?module=ciudad"><i class="fa fa-circle-o"></i>Ciudad</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>Prueba</a></li>
                 </ul>
             </li>
             <li class="treeview">
